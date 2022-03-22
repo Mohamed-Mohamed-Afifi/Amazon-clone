@@ -1,0 +1,21 @@
+.products{
+    display: flex;
+    flex-direction:row;
+    padding: 16rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards{
+   color:green;
+   padding:5rem;
+
+}
+.card_content{
+    border: 2px solid gold;
+    position: relative;
+}
+.card_content button{
+    position: absolute;
+    top:0px;
+}
