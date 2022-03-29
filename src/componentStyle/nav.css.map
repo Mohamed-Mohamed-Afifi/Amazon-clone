@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,GAAG,CAAA;EACC,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAC,IACV;CAAC",
+    "sources": [
+        "nav.scss",
+        "_main.scss"
+    ],
+    "names": [],
+    "file": "nav.css"
+}
