@@ -6,17 +6,35 @@ import Cards from './Cards';
 const Products=()=> {
   const [data,setState]=useState([
     {
-      name:"samon",
-      email:"mo@gmail.com"
+      name:"food",
+      email:"mo@gmail.com",
+      type:"food"
     },
     {
-      name:"mohamed",
-      email:"mo@gmail.com"
+      name:"food",
+      email:"mo@gmail.com",
+      type:"food"
     },
     {
-      name:"amira",
-      email:"mo@gmail.com"
-    }
+      name:"food",
+      email:"mo@gmail.com",
+      type:"food"
+    },
+    {
+      name:"electronics",
+      email:"mo@gmail.com",
+      type:"electronics"
+    },
+    {
+      name:"electronics",
+      email:"mo@gmail.com",
+      type:"electronics"
+    },
+    {
+      name:"electronics",
+      email:"mo@gmail.com",
+      type:"electronics"
+    },
   ]);
   // const url="https://jsonplaceholder.typicode.com/users";
   // axios.get(`${url}`).then((res)=>{
@@ -27,6 +45,13 @@ const delElement=(e,ind)=>{
   setState(newState)
   console.log(data)
 }
+const filterElement=(e)=>{
+  let type=e.target.getAttribute("type");
+  const newState=data.filter((el)=>el.type == type)
+  setState(newState)
+  console.log(e.target.getAttribute("type"))
+}
+console.log(data)
   // React use state to updata data
   return (
     <Fragment>
